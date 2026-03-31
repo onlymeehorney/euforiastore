@@ -51,11 +51,12 @@ const PRODUCTS: Product[] = [
     price: 12.50,
     category: 'Colección Verano',
     description: 'Algodón orgánico transpirable. Perfectas para después de la ducha o para días calurosos donde buscas frescura y ligereza.',
-    colors: ['blanco', 'azul', 'rosa'],
+    colors: ['blanco', 'negro', 'rosa'],
     images: {
-      'blanco': 'https://picsum.photos/seed/cotton-white/800/800',
-      'azul': 'https://picsum.photos/seed/cotton-blue/800/800',
-      'rosa': 'https://picsum.photos/seed/cotton-pink/800/800',
+      'nothing': 'https://s.alicdn.com/@sc04/kf/Hf4b1e5217bee41709c24ef173fa1d82a6.jpg?avif=close&webp=close',
+      'blanco': 'https://s.alicdn.com/@sc04/kf/H8982e975ff3f43eea3ca7a9512779aabb.jpg?avif=close&webp=close',
+      'negro': 'https://s.alicdn.com/@sc04/kf/H465031d3d7954c2a928607658627d757E.jpg?avif=close&webp=close',
+      'rosa': 'https://s.alicdn.com/@sc04/kf/H1c4812a645de4d44a561c2a483b0bd9dQ.jpg?avif=close&webp=close',
     }
   },
   {
