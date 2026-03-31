@@ -23,6 +23,9 @@ const PRODUCTS: Product[] = [
     price: 10.00,
         category: 'Colección Invierno',
     description: 'Pantuflas ultra suaves con forro de piel sintética de alta calidad. Ideales para el descanso en casa con un toque de elegancia y confort inigualable.',
+    sizes: ['36-37', '38-39', '40-41', '42-43'],
+    reviews: 1248,
+    rating: 4.9,
     colors: ['marrón', 'rosa', 'gris', 'blanco', 'rojo'],
     images: {
       'marrón': 'https://image2url.com/r2/default/images/1774991893154-50d1f8be-5adb-4a75-9b74-b3d14e2005b8.jpeg',
