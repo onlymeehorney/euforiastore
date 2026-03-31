@@ -34,9 +34,9 @@ const PRODUCTS: Product[] = [
   },
   {
     id: 'p2',
-    name: 'Pantuflas de Lana Nórdica',
+    name: 'Zapatos de corazón de melocotón',
     price: 7.99,
-    category: 'Colección Premium',
+    category: 'Otoño e invierno',
     description: 'Hechas a mano con lana virgen 100%. Suela antideslizante y diseño ergonómico para una calidez total en climas extremos.',
     colors: ['gris', 'rojo', 'rosa'],
     images: {
