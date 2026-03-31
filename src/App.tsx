@@ -40,7 +40,7 @@ const PRODUCTS: Product[] = [
     description: 'Hechas a mano con lana virgen 100%. Suela antideslizante y diseño ergonómico para una calidez total en climas extremos.',
     colors: ['gris', 'negro', 'marrón'],
     images: {
-      'gris': 'https://image2url.com/r2/default/images/1774991893154-50d1f8be-5adb-4a75-9b74-b3d14e2005b8.jpeg',
+      'gris': 'https://s.alicdn.com/@sc04/kf/H7e618b15c3aa4e3c96798f14ee195db5u.jpg?avif=close&webp=close',
       'negro': 'https://image2url.com/r2/default/images/1774991960729-720bd52f-1642-40ab-be0c-86c2d081e92f.jpeg',
       'marrón': 'https://image2url.com/r2/default/images/1774992020130-1cf3f017-766e-464e-a4af-cfd8a36723fa.jpeg',
     }
