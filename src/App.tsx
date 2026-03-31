@@ -47,11 +47,11 @@ const PRODUCTS: Product[] = [
   },
   {
     id: 'p3',
-    name: 'Pantuflas de Algodón Zen',
+    name: 'Zapatillas de interior',
     price: 12.50,
     category: 'Colección Verano',
     description: 'Algodón orgánico transpirable. Perfectas para después de la ducha o para días calurosos donde buscas frescura y ligereza.',
-    colors: ['blanco', 'negro', 'rosa'],
+    colors: ['blanco', 'blanco', 'negro', 'rosa'],
     images: {
       'nothing': 'https://s.alicdn.com/@sc04/kf/Hf4b1e5217bee41709c24ef173fa1d82a6.jpg?avif=close&webp=close',
       'blanco': 'https://s.alicdn.com/@sc04/kf/H8982e975ff3f43eea3ca7a9512779aabb.jpg?avif=close&webp=close',
