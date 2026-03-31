@@ -35,14 +35,14 @@ const PRODUCTS: Product[] = [
   {
     id: 'p2',
     name: 'Pantuflas de Lana Nórdica',
-    price: 15.00,
+    price: 7.99,
     category: 'Colección Premium',
     description: 'Hechas a mano con lana virgen 100%. Suela antideslizante y diseño ergonómico para una calidez total en climas extremos.',
     colors: ['gris', 'negro', 'marrón'],
     images: {
       'gris': 'https://s.alicdn.com/@sc04/kf/H7e618b15c3aa4e3c96798f14ee195db5u.jpg?avif=close&webp=close',
-      'negro': 'https://image2url.com/r2/default/images/1774991960729-720bd52f-1642-40ab-be0c-86c2d081e92f.jpeg',
-      'marrón': 'https://image2url.com/r2/default/images/1774992020130-1cf3f017-766e-464e-a4af-cfd8a36723fa.jpeg',
+      'negro': 'https://s.alicdn.com/@sc04/kf/Hb8cd4644d0e24a94a2ca3ce2b746e5c7r.jpg?avif=close&webp=close',
+      'marrón': 'https://s.alicdn.com/@sc04/kf/He6d9b9a283bd480caa7087ed785efc13O.jpg?avif=close&webp=close',
     }
   },
   {
