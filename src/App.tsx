@@ -41,8 +41,8 @@ const PRODUCTS: Product[] = [
     colors: ['gris', 'negro', 'marrón'],
     images: {
       'gris': 'https://s.alicdn.com/@sc04/kf/H7e618b15c3aa4e3c96798f14ee195db5u.jpg?avif=close&webp=close',
-      'negro': 'https://s.alicdn.com/@sc04/kf/Hb8cd4644d0e24a94a2ca3ce2b746e5c7r.jpg?avif=close&webp=close',
-      'marrón': 'https://s.alicdn.com/@sc04/kf/He6d9b9a283bd480caa7087ed785efc13O.jpg?avif=close&webp=close',
+      'rojo': 'https://s.alicdn.com/@sc04/kf/Hb8cd4644d0e24a94a2ca3ce2b746e5c7r.jpg?avif=close&webp=close',
+      'rosa': 'https://s.alicdn.com/@sc04/kf/He6d9b9a283bd480caa7087ed785efc13O.jpg?avif=close&webp=close',
     }
   },
   {
