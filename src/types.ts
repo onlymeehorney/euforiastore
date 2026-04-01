@@ -8,11 +8,15 @@ export interface Product {
   category: string;
   images: Record<string, string>;
   colors: Color[];
+  sizes: string[];
+  reviews: number;
+  rating: number;
 }
 
 export interface CartItem {
   productId: string;
   color: Color;
+  size: string;
   quantity: number;
   price: number;
   name: string;
