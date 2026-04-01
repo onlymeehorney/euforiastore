@@ -31,7 +31,7 @@ const PRODUCTS: Product[] = [
     rating: 4.9,
     stock: 12,
     reviewsList: [
-      { id: '1', userName: 'María G.', rating: 5, comment: 'Son increíblemente suaves, las mejores que he tenido.', date: 'hace 2 días', userImage: 'https://i.pravatar.cc/150?u=maria' },
+      { id: '1', userName: 'María G.', rating: 5, comment: 'Son increíblemente suaves, las mejores que he tenido.', date: 'hace 2 días', userImage: 'https://instagram.fsti5-1.fna.fbcdn.net/v/t51.82787-19/633664300_18043511498518282_4226976222586137644_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby45NjAuYzIifQ&_nc_ht=instagram.fsti5-1.fna.fbcdn.net&_nc_cat=110&_nc_oc=Q6cZ2gG6vZAFAOWRz6g_rsZNsmtNw6GfmJ4fY0l-SzF-TPFht430n5YTUKWJ-uS294bwJfTQ2TR253KSKqpUxPNGD0U3&_nc_ohc=nczCeaH-vV8Q7kNvwHfKT2x&_nc_gid=c1sEs4sfKVi2sxkNmr8nqQ&edm=ALGbJPMBAAAA&ccb=7-5&oh=00_Af0sNLDUERlNpw95DVm6_eNeNzRN-j3x1KB4ZuhKTZumKg&oe=69D254F7&_nc_sid=7d3ac5' },
     ],
     images: {
       'marrón': 'https://image2url.com/r2/default/images/1774991893154-50d1f8be-5adb-4a75-9b74-b3d14e2005b8.jpeg',
