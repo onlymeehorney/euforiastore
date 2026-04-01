@@ -31,7 +31,7 @@ const PRODUCTS: Product[] = [
     rating: 4.9,
     stock: 12,
     reviewsList: [
-      { id: '1', userName: 'María G.', rating: 5, comment: 'Son increíblemente suaves, las mejores que he tenido.', date: 'hace 2 días', userImage: 'https://instagram.fsti5-1.fna.fbcdn.net/v/t51.82787-19/633664300_18043511498518282_4226976222586137644_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby45NjAuYzIifQ&_nc_ht=instagram.fsti5-1.fna.fbcdn.net&_nc_cat=110&_nc_oc=Q6cZ2gG6vZAFAOWRz6g_rsZNsmtNw6GfmJ4fY0l-SzF-TPFht430n5YTUKWJ-uS294bwJfTQ2TR253KSKqpUxPNGD0U3&_nc_ohc=nczCeaH-vV8Q7kNvwHfKT2x&_nc_gid=c1sEs4sfKVi2sxkNmr8nqQ&edm=ALGbJPMBAAAA&ccb=7-5&oh=00_Af0sNLDUERlNpw95DVm6_eNeNzRN-j3x1KB4ZuhKTZumKg&oe=69D254F7&_nc_sid=7d3ac5' },
+      { id: '1', userName: 'María G.', rating: 5, comment: 'Son increíblemente suaves, las mejores que he tenido.', date: 'hace 2 días', userImage: 'https://objetivoligar.com/wp-content/uploads/2017/03/blank-profile-picture-973460_1280-768x768.jpg' },
     ],
     images: {
       'marrón': 'https://image2url.com/r2/default/images/1774991893154-50d1f8be-5adb-4a75-9b74-b3d14e2005b8.jpeg',
@@ -53,10 +53,10 @@ const PRODUCTS: Product[] = [
     rating: 4.7,
     stock: 5,
     reviewsList: [
-      { id: '3', userName: 'Elena P.', rating: 5, comment: 'Súper calientes para el invierno, me encantan.', date: 'hace 3 días', userImage: 'https://i.pravatar.cc/150?u=elena' },
-      { id: '9', userName: 'Ana T.', rating: 5, comment: 'El diseño nórdico es precioso y abrigan muchísimo.', date: 'hace 1 mes', userImage: 'https://i.pravatar.cc/150?u=ana' },
-      { id: '11', userName: 'Marta L.', rating: 5, comment: 'Las compré para regalo y fueron un éxito total.', date: 'hace 3 meses', userImage: 'https://i.pravatar.cc/150?u=marta' },
-      { id: '13', userName: 'Carmen J.', rating: 4, comment: 'Calentitas y cómodas para estar por casa.', date: 'hace 5 meses', userImage: 'https://i.pravatar.cc/150?u=carmen' }
+      { id: '3', userName: 'Elena P.', rating: 5, comment: 'Súper calientes para el invierno, me encantan.', date: 'hace 3 días', userImage: 'https://objetivoligar.com/wp-content/uploads/2017/03/blank-profile-picture-973460_1280-768x768.jpg' },
+      { id: '9', userName: 'Ana T.', rating: 5, comment: 'El diseño nórdico es precioso y abrigan muchísimo.', date: 'hace 1 mes', userImage: 'https://objetivoligar.com/wp-content/uploads/2017/03/blank-profile-picture-973460_1280-768x768.jpg' },
+      { id: '11', userName: 'Marta L.', rating: 5, comment: 'Las compré para regalo y fueron un éxito total.', date: 'hace 3 meses', userImage: 'https://objetivoligar.com/wp-content/uploads/2017/03/blank-profile-picture-973460_1280-768x768.jpg' },
+      { id: '13', userName: 'Carmen J.', rating: 4, comment: 'Calentitas y cómodas para estar por casa.', date: 'hace 5 meses', userImage: 'https://objetivoligar.com/wp-content/uploads/2017/03/blank-profile-picture-973460_1280-768x768.jpg' }
     ],
     images: {
       'gris': 'https://s.alicdn.com/@sc04/kf/H7e618b15c3aa4e3c96798f14ee195db5u.jpg?avif=close&webp=close',
@@ -76,7 +76,7 @@ const PRODUCTS: Product[] = [
     rating: 4.8,
     stock: 24,
     reviewsList: [
-      { id: '5', userName: 'Lucía S.', rating: 5, comment: 'Frescas y ligeras, perfectas para el verano.', date: 'hace 1 día', userImage: 'https://i.pravatar.cc/150?u=lucia' }
+      { id: '5', userName: 'Lucía S.', rating: 5, comment: 'Frescas y ligeras, perfectas para el verano.', date: 'hace 1 día', userImage: 'https://objetivoligar.com/wp-content/uploads/2017/03/blank-profile-picture-973460_1280-768x768.jpg' }
     ],
     images: {
       'nothing': 'https://s.alicdn.com/@sc04/kf/Hf4b1e5217bee41709c24ef173fa1d82a6.jpg?avif=close&webp=close',
@@ -97,9 +97,9 @@ const PRODUCTS: Product[] = [
     rating: 5.0,
     stock: 3,
     reviewsList: [
-      { id: '7', userName: 'Sofía L.', rating: 5, comment: 'El terciopelo es de otro mundo, puro lujo.', date: 'hace 4 días', userImage: 'https://i.pravatar.cc/150?u=sofia' },
-      { id: '14', userName: 'Isabel K.', rating: 5, comment: 'Elegancia pura, me siento como una reina en casa.', date: 'hace 2 meses', userImage: 'https://i.pravatar.cc/150?u=isabel' },
-      { id: '16', userName: 'Laura D.', rating: 5, comment: 'Simplemente espectaculares.', date: 'hace 4 meses', userImage: 'https://i.pravatar.cc/150?u=laura' }
+      { id: '7', userName: 'Sofía L.', rating: 5, comment: 'El terciopelo es de otro mundo, puro lujo.', date: 'hace 4 días', userImage: 'https://objetivoligar.com/wp-content/uploads/2017/03/blank-profile-picture-973460_1280-768x768.jpg' },
+      { id: '14', userName: 'Isabel K.', rating: 5, comment: 'Elegancia pura, me siento como una reina en casa.', date: 'hace 2 meses', userImage: 'https://objetivoligar.com/wp-content/uploads/2017/03/blank-profile-picture-973460_1280-768x768.jpg' },
+      { id: '16', userName: 'Laura D.', rating: 5, comment: 'Simplemente espectaculares.', date: 'hace 4 meses', userImage: 'https://objetivoligar.com/wp-content/uploads/2017/03/blank-profile-picture-973460_1280-768x768.jpg' }
     ],
     images: {
       'rosa': 'https://s.alicdn.com/@sc04/kf/H5c5729c6c908475cbe4cf26d7ed78600W.jpg?avif=close&webp=close',
