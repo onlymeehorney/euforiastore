@@ -42,6 +42,9 @@ const PRODUCTS: Product[] = [
     category: 'Otoño e invierno',
     description: 'Hechas a mano con lana virgen 100%. Suela antideslizante y diseño ergonómico para una calidez total en climas extremos.',
     colors: ['gris', 'rojo', 'rosa'],
+    sizes: ['36-37', '38-39', '40-41', '42-43'],
+    reviews: 856,
+    rating: 4.7,
     images: {
       'gris': 'https://s.alicdn.com/@sc04/kf/H7e618b15c3aa4e3c96798f14ee195db5u.jpg?avif=close&webp=close',
       'rojo': 'https://s.alicdn.com/@sc04/kf/Hb8cd4644d0e24a94a2ca3ce2b746e5c7r.jpg?avif=close&webp=close',
@@ -55,6 +58,9 @@ const PRODUCTS: Product[] = [
     category: 'Colección Verano',
     description: 'Algodón orgánico transpirable. Perfectas para después de la ducha o para días calurosos donde buscas frescura y ligereza.',
     colors: ['nothing', 'blanco', 'negro', 'rosa'],
+    sizes: ['36-37', '38-39', '40-41', '42-43'],
+    reviews: 2103,
+    rating: 4.8,
     images: {
       'nothing': 'https://s.alicdn.com/@sc04/kf/Hf4b1e5217bee41709c24ef173fa1d82a6.jpg?avif=close&webp=close',
       'blanco': 'https://s.alicdn.com/@sc04/kf/H8982e975ff3f43eea3ca7a9512779aabb.jpg?avif=close&webp=close',
@@ -69,6 +75,9 @@ const PRODUCTS: Product[] = [
     category: 'Edición Limitada',
     description: 'El lujo máximo para tus pies. Terciopelo italiano con detalles bordados en hilo de seda. Incluye bolsa de viaje.',
     colors: ['rojo', 'negro', 'azul'],
+    sizes: ['36-37', '38-39', '40-41', '42-43'],
+    reviews: 432,
+    rating: 5.0,
     images: {
       'rojo': 'https://picsum.photos/seed/velvet-red/800/800',
       'negro': 'https://picsum.photos/seed/velvet-black/800/800',
