@@ -22,7 +22,7 @@ const PRODUCTS: Product[] = [
   {
     id: 'p1',
     name: 'Pantuflas de Piel Premium',
-    price: 10.00,
+    price: 7.99,
         category: 'Colección Invierno',
     description: 'Pantuflas ultra suaves con forro de piel sintética de alta calidad. Ideales para el descanso en casa con un toque de elegancia y confort inigualable.',
     colors: ['marrón', 'rosa', 'gris', 'blanco', 'rojo'],
@@ -32,7 +32,6 @@ const PRODUCTS: Product[] = [
     stock: 12,
     reviewsList: [
       { id: '1', userName: 'María G.', rating: 5, comment: 'Son increíblemente suaves, las mejores que he tenido.', date: 'hace 2 días', userImage: 'https://i.pravatar.cc/150?u=maria' },
-      { id: '2', userName: 'Carlos R.', rating: 4, comment: 'Muy cómodas, aunque tardaron un poco en llegar.', date: 'hace 1 semana', userImage: 'https://i.pravatar.cc/150?u=carlos' }
     ],
     images: {
       'marrón': 'https://image2url.com/r2/default/images/1774991893154-50d1f8be-5adb-4a75-9b74-b3d14e2005b8.jpeg',
@@ -44,37 +43,34 @@ const PRODUCTS: Product[] = [
   },
   {
     id: 'p2',
-    name: 'Pantuflas de Lana Nórdica',
-    price: 15.00,
-    category: 'Colección Premium',
+    name: 'Zapatos de corazón de melocotón',
+    price: 7.99,
+    category: 'Otoño e invierno',
     description: 'Hechas a mano con lana virgen 100%. Suela antideslizante y diseño ergonómico para una calidez total en climas extremos.',
-    colors: ['gris', 'negro', 'marrón'],
+    colors: ['gris', 'rojo', 'rosa'],
     sizes: ['36-37', '38-39', '40-41', '42-43'],
     reviews: 856,
     rating: 4.7,
     stock: 5,
     reviewsList: [
       { id: '3', userName: 'Elena P.', rating: 5, comment: 'Súper calientes para el invierno, me encantan.', date: 'hace 3 días', userImage: 'https://i.pravatar.cc/150?u=elena' },
-      { id: '4', userName: 'Jorge M.', rating: 4, comment: 'Calidad excelente, la lana es de verdad.', date: 'hace 2 semanas', userImage: 'https://i.pravatar.cc/150?u=jorge' },
       { id: '9', userName: 'Ana T.', rating: 5, comment: 'El diseño nórdico es precioso y abrigan muchísimo.', date: 'hace 1 mes', userImage: 'https://i.pravatar.cc/150?u=ana' },
-      { id: '10', userName: 'Pedro S.', rating: 4, comment: 'Muy buenas, aunque la suela es un poco rígida al principio.', date: 'hace 2 meses', userImage: 'https://i.pravatar.cc/150?u=pedro' },
       { id: '11', userName: 'Marta L.', rating: 5, comment: 'Las compré para regalo y fueron un éxito total.', date: 'hace 3 meses', userImage: 'https://i.pravatar.cc/150?u=marta' },
-      { id: '12', userName: 'Luis F.', rating: 5, comment: 'Increíble calidad, se nota que es lana virgen.', date: 'hace 4 meses', userImage: 'https://i.pravatar.cc/150?u=luis' },
       { id: '13', userName: 'Carmen J.', rating: 4, comment: 'Calentitas y cómodas para estar por casa.', date: 'hace 5 meses', userImage: 'https://i.pravatar.cc/150?u=carmen' }
     ],
     images: {
-      'gris': 'https://image2url.com/r2/default/images/1774991893154-50d1f8be-5adb-4a75-9b74-b3d14e2005b8.jpeg',
-      'negro': 'https://image2url.com/r2/default/images/1774991960729-720bd52f-1642-40ab-be0c-86c2d081e92f.jpeg',
-      'marrón': 'https://image2url.com/r2/default/images/1774992020130-1cf3f017-766e-464e-a4af-cfd8a36723fa.jpeg',
+      'gris': 'https://s.alicdn.com/@sc04/kf/H7e618b15c3aa4e3c96798f14ee195db5u.jpg?avif=close&webp=close',
+      'rojo': 'https://s.alicdn.com/@sc04/kf/Hb8cd4644d0e24a94a2ca3ce2b746e5c7r.jpg?avif=close&webp=close',
+      'rosa': 'https://s.alicdn.com/@sc04/kf/He6d9b9a283bd480caa7087ed785efc13O.jpg?avif=close&webp=close',
     }
   },
   {
     id: 'p3',
-    name: 'Pantuflas de Algodón Zen',
-    price: 12.50,
+    name: 'Zapatillas de interior',
+    price: 7.99,
     category: 'Colección Verano',
     description: 'Algodón orgánico transpirable. Perfectas para después de la ducha o para días calurosos donde buscas frescura y ligereza.',
-    colors: ['blanco', 'azul', 'rosa'],
+    colors: ['nothing', 'blanco', 'negro', 'rosa'],
     sizes: ['36-37', '38-39', '40-41', '42-43'],
     reviews: 2103,
     rating: 4.8,
@@ -83,9 +79,10 @@ const PRODUCTS: Product[] = [
       { id: '5', userName: 'Lucía S.', rating: 5, comment: 'Frescas y ligeras, perfectas para el verano.', date: 'hace 1 día', userImage: 'https://i.pravatar.cc/150?u=lucia' }
     ],
     images: {
-      'blanco': 'https://picsum.photos/seed/cotton-white/800/800',
-      'azul': 'https://picsum.photos/seed/cotton-blue/800/800',
-      'rosa': 'https://picsum.photos/seed/cotton-pink/800/800',
+      'nothing': 'https://s.alicdn.com/@sc04/kf/Hf4b1e5217bee41709c24ef173fa1d82a6.jpg?avif=close&webp=close',
+      'blanco': 'https://s.alicdn.com/@sc04/kf/H8982e975ff3f43eea3ca7a9512779aabb.jpg?avif=close&webp=close',
+      'negro': 'https://s.alicdn.com/@sc04/kf/H465031d3d7954c2a928607658627d757E.jpg?avif=close&webp=close',
+      'rosa': 'https://s.alicdn.com/@sc04/kf/H1c4812a645de4d44a561c2a483b0bd9dQ.jpg?avif=close&webp=close',
     }
   },
   {
@@ -94,22 +91,20 @@ const PRODUCTS: Product[] = [
     price: 20.00,
     category: 'Edición Limitada',
     description: 'El lujo máximo para tus pies. Terciopelo italiano con detalles bordados en hilo de seda. Incluye bolsa de viaje.',
-    colors: ['rojo', 'negro', 'azul'],
+    colors: ['rosa', 'blanco', 'negro'],
     sizes: ['36-37', '38-39', '40-41', '42-43'],
     reviews: 432,
     rating: 5.0,
     stock: 3,
     reviewsList: [
       { id: '7', userName: 'Sofía L.', rating: 5, comment: 'El terciopelo es de otro mundo, puro lujo.', date: 'hace 4 días', userImage: 'https://i.pravatar.cc/150?u=sofia' },
-      { id: '8', userName: 'Roberto V.', rating: 5, comment: 'Un regalo perfecto, mi esposa está encantada.', date: 'hace 1 mes', userImage: 'https://i.pravatar.cc/150?u=roberto' },
       { id: '14', userName: 'Isabel K.', rating: 5, comment: 'Elegancia pura, me siento como una reina en casa.', date: 'hace 2 meses', userImage: 'https://i.pravatar.cc/150?u=isabel' },
-      { id: '15', userName: 'Miguel A.', rating: 5, comment: 'Valen cada céntimo, la presentación es impecable.', date: 'hace 3 meses', userImage: 'https://i.pravatar.cc/150?u=miguel' },
       { id: '16', userName: 'Laura D.', rating: 5, comment: 'Simplemente espectaculares.', date: 'hace 4 meses', userImage: 'https://i.pravatar.cc/150?u=laura' }
     ],
     images: {
-      'rojo': 'https://picsum.photos/seed/velvet-red/800/800',
-      'negro': 'https://picsum.photos/seed/velvet-black/800/800',
-      'azul': 'https://picsum.photos/seed/velvet-blue/800/800',
+      'rosa': 'https://s.alicdn.com/@sc04/kf/H5c5729c6c908475cbe4cf26d7ed78600W.jpg?avif=close&webp=close',
+      'blanco': 'https://s.alicdn.com/@sc04/kf/He815d6e02e744287907a186dbc7c91bcn.jpg?avif=close&webp=close',
+      'negro': 'https://s.alicdn.com/@sc04/kf/Hfaa7c36796ab456e920bd206087e2ebbP.jpg?avif=close&webp=close',
     }
   }
 ];
