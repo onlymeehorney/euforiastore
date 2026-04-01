@@ -12,7 +12,9 @@ import {
   X, 
   Plus, 
   Minus,
-  ArrowRight
+  ArrowRight,
+  Package,
+  Clock
 } from 'lucide-react';
 import { Color, Product, CartItem } from './types';
 
@@ -23,10 +25,15 @@ const PRODUCTS: Product[] = [
     price: 10.00,
         category: 'Colección Invierno',
     description: 'Pantuflas ultra suaves con forro de piel sintética de alta calidad. Ideales para el descanso en casa con un toque de elegancia y confort inigualable.',
+    colors: ['marrón', 'rosa', 'gris', 'blanco', 'rojo'],
     sizes: ['36-37', '38-39', '40-41', '42-43'],
     reviews: 1248,
     rating: 4.9,
-    colors: ['marrón', 'rosa', 'gris', 'blanco', 'rojo'],
+    stock: 12,
+    reviewsList: [
+      { id: '1', userName: 'María G.', rating: 5, comment: 'Son increíblemente suaves, las mejores que he tenido.', date: 'hace 2 días', userImage: 'https://i.pravatar.cc/150?u=maria' },
+      { id: '2', userName: 'Carlos R.', rating: 4, comment: 'Muy cómodas, aunque tardaron un poco en llegar.', date: 'hace 1 semana', userImage: 'https://i.pravatar.cc/150?u=carlos' }
+    ],
     images: {
       'marrón': 'https://image2url.com/r2/default/images/1774991893154-50d1f8be-5adb-4a75-9b74-b3d14e2005b8.jpeg',
       'rosa': 'https://image2url.com/r2/default/images/1774992020130-1cf3f017-766e-464e-a4af-cfd8a36723fa.jpeg',
@@ -37,35 +44,48 @@ const PRODUCTS: Product[] = [
   },
   {
     id: 'p2',
-    name: 'Zapatos de corazón de melocotón',
-    price: 7.99,
-    category: 'Otoño e invierno',
+    name: 'Pantuflas de Lana Nórdica',
+    price: 15.00,
+    category: 'Colección Premium',
     description: 'Hechas a mano con lana virgen 100%. Suela antideslizante y diseño ergonómico para una calidez total en climas extremos.',
-    colors: ['gris', 'rojo', 'rosa'],
+    colors: ['gris', 'negro', 'marrón'],
     sizes: ['36-37', '38-39', '40-41', '42-43'],
     reviews: 856,
     rating: 4.7,
+    stock: 5,
+    reviewsList: [
+      { id: '3', userName: 'Elena P.', rating: 5, comment: 'Súper calientes para el invierno, me encantan.', date: 'hace 3 días', userImage: 'https://i.pravatar.cc/150?u=elena' },
+      { id: '4', userName: 'Jorge M.', rating: 4, comment: 'Calidad excelente, la lana es de verdad.', date: 'hace 2 semanas', userImage: 'https://i.pravatar.cc/150?u=jorge' },
+      { id: '9', userName: 'Ana T.', rating: 5, comment: 'El diseño nórdico es precioso y abrigan muchísimo.', date: 'hace 1 mes', userImage: 'https://i.pravatar.cc/150?u=ana' },
+      { id: '10', userName: 'Pedro S.', rating: 4, comment: 'Muy buenas, aunque la suela es un poco rígida al principio.', date: 'hace 2 meses', userImage: 'https://i.pravatar.cc/150?u=pedro' },
+      { id: '11', userName: 'Marta L.', rating: 5, comment: 'Las compré para regalo y fueron un éxito total.', date: 'hace 3 meses', userImage: 'https://i.pravatar.cc/150?u=marta' },
+      { id: '12', userName: 'Luis F.', rating: 5, comment: 'Increíble calidad, se nota que es lana virgen.', date: 'hace 4 meses', userImage: 'https://i.pravatar.cc/150?u=luis' },
+      { id: '13', userName: 'Carmen J.', rating: 4, comment: 'Calentitas y cómodas para estar por casa.', date: 'hace 5 meses', userImage: 'https://i.pravatar.cc/150?u=carmen' }
+    ],
     images: {
-      'gris': 'https://s.alicdn.com/@sc04/kf/H7e618b15c3aa4e3c96798f14ee195db5u.jpg?avif=close&webp=close',
-      'rojo': 'https://s.alicdn.com/@sc04/kf/Hb8cd4644d0e24a94a2ca3ce2b746e5c7r.jpg?avif=close&webp=close',
-      'rosa': 'https://s.alicdn.com/@sc04/kf/He6d9b9a283bd480caa7087ed785efc13O.jpg?avif=close&webp=close',
+      'gris': 'https://image2url.com/r2/default/images/1774991893154-50d1f8be-5adb-4a75-9b74-b3d14e2005b8.jpeg',
+      'negro': 'https://image2url.com/r2/default/images/1774991960729-720bd52f-1642-40ab-be0c-86c2d081e92f.jpeg',
+      'marrón': 'https://image2url.com/r2/default/images/1774992020130-1cf3f017-766e-464e-a4af-cfd8a36723fa.jpeg',
     }
   },
   {
     id: 'p3',
-    name: 'Zapatillas de interior',
+    name: 'Pantuflas de Algodón Zen',
     price: 12.50,
     category: 'Colección Verano',
     description: 'Algodón orgánico transpirable. Perfectas para después de la ducha o para días calurosos donde buscas frescura y ligereza.',
-    colors: ['nothing', 'blanco', 'negro', 'rosa'],
+    colors: ['blanco', 'azul', 'rosa'],
     sizes: ['36-37', '38-39', '40-41', '42-43'],
     reviews: 2103,
     rating: 4.8,
+    stock: 24,
+    reviewsList: [
+      { id: '5', userName: 'Lucía S.', rating: 5, comment: 'Frescas y ligeras, perfectas para el verano.', date: 'hace 1 día', userImage: 'https://i.pravatar.cc/150?u=lucia' }
+    ],
     images: {
-      'nothing': 'https://s.alicdn.com/@sc04/kf/Hf4b1e5217bee41709c24ef173fa1d82a6.jpg?avif=close&webp=close',
-      'blanco': 'https://s.alicdn.com/@sc04/kf/H8982e975ff3f43eea3ca7a9512779aabb.jpg?avif=close&webp=close',
-      'negro': 'https://s.alicdn.com/@sc04/kf/H465031d3d7954c2a928607658627d757E.jpg?avif=close&webp=close',
-      'rosa': 'https://s.alicdn.com/@sc04/kf/H1c4812a645de4d44a561c2a483b0bd9dQ.jpg?avif=close&webp=close',
+      'blanco': 'https://picsum.photos/seed/cotton-white/800/800',
+      'azul': 'https://picsum.photos/seed/cotton-blue/800/800',
+      'rosa': 'https://picsum.photos/seed/cotton-pink/800/800',
     }
   },
   {
@@ -78,6 +98,14 @@ const PRODUCTS: Product[] = [
     sizes: ['36-37', '38-39', '40-41', '42-43'],
     reviews: 432,
     rating: 5.0,
+    stock: 3,
+    reviewsList: [
+      { id: '7', userName: 'Sofía L.', rating: 5, comment: 'El terciopelo es de otro mundo, puro lujo.', date: 'hace 4 días', userImage: 'https://i.pravatar.cc/150?u=sofia' },
+      { id: '8', userName: 'Roberto V.', rating: 5, comment: 'Un regalo perfecto, mi esposa está encantada.', date: 'hace 1 mes', userImage: 'https://i.pravatar.cc/150?u=roberto' },
+      { id: '14', userName: 'Isabel K.', rating: 5, comment: 'Elegancia pura, me siento como una reina en casa.', date: 'hace 2 meses', userImage: 'https://i.pravatar.cc/150?u=isabel' },
+      { id: '15', userName: 'Miguel A.', rating: 5, comment: 'Valen cada céntimo, la presentación es impecable.', date: 'hace 3 meses', userImage: 'https://i.pravatar.cc/150?u=miguel' },
+      { id: '16', userName: 'Laura D.', rating: 5, comment: 'Simplemente espectaculares.', date: 'hace 4 meses', userImage: 'https://i.pravatar.cc/150?u=laura' }
+    ],
     images: {
       'rojo': 'https://picsum.photos/seed/velvet-red/800/800',
       'negro': 'https://picsum.photos/seed/velvet-black/800/800',
@@ -134,6 +162,7 @@ export default function App() {
   const [view, setView] = useState<'home' | 'detail' | 'checkout'>('home');
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [selectedColor, setSelectedColor] = useState<Color>('marrón');
+  const [selectedSize, setSelectedSize] = useState<string>('36-37');
   const [cart, setCart] = useState<CartItem[]>([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -168,11 +197,11 @@ export default function App() {
   const shippingCost = shippingMethod === 'express' ? 5.00 : 0.00;
   const total = subtotal + shippingCost;
 
-  const addToCart = (product: Product, color: Color) => {
-    const existingItem = cart.find(item => item.productId === product.id && item.color === color);
+  const addToCart = (product: Product, color: Color, size: string) => {
+    const existingItem = cart.find(item => item.productId === product.id && item.color === color && item.size === size);
     if (existingItem) {
       setCart(cart.map(item => 
-        (item.productId === product.id && item.color === color) 
+        (item.productId === product.id && item.color === color && item.size === size) 
         ? { ...item, quantity: item.quantity + 1 } 
         : item
       ));
@@ -182,6 +211,7 @@ export default function App() {
         name: product.name,
         price: product.price,
         color: color,
+        size: size,
         quantity: 1,
         image: product.images[color]
       }]);
@@ -189,13 +219,13 @@ export default function App() {
     setIsCartOpen(true);
   };
 
-  const removeFromCart = (productId: string, color: Color) => {
-    setCart(cart.filter(item => !(item.productId === productId && item.color === color)));
+  const removeFromCart = (productId: string, color: Color, size: string) => {
+    setCart(cart.filter(item => !(item.productId === productId && item.color === color && item.size === size)));
   };
 
-  const updateQuantity = (productId: string, color: Color, delta: number) => {
+  const updateQuantity = (productId: string, color: Color, size: string, delta: number) => {
     setCart(cart.map(item => {
-      if (item.productId === productId && item.color === color) {
+      if (item.productId === productId && item.color === color && item.size === size) {
         const newQty = Math.max(1, item.quantity + delta);
         return { ...item, quantity: newQty };
       }
@@ -216,7 +246,7 @@ export default function App() {
     }
 
     setIsSubmitting(true);
-    const cartDetails = cart.map(item => `${item.name} (${item.color}) x${item.quantity}`).join('\n');
+    const cartDetails = cart.map(item => `${item.name} (${item.color}, Talla: ${item.size}) x${item.quantity}`).join('\n');
     
     const finalBillingStreet = billingSameAsShipping ? street : billingStreet;
     const finalBillingApt = billingSameAsShipping ? apt : billingApt;
@@ -323,6 +353,7 @@ País: ${finalBillingCountry}
                     onClick={() => {
                       setSelectedProduct(product);
                       setSelectedColor(product.colors[0]);
+                      setSelectedSize(product.sizes[0]);
                       setView('detail');
                     }}
                   >
@@ -338,6 +369,13 @@ País: ${finalBillingCountry}
                           {product.category}
                         </span>
                       </div>
+                      {product.stock < 10 && (
+                        <div className="absolute top-4 right-4">
+                          <span className="bg-red-500 text-white px-2 py-1 rounded-full text-[8px] sm:text-[10px] font-black uppercase tracking-widest shadow-lg animate-pulse">
+                            ¡Últimas {product.stock}!
+                          </span>
+                        </div>
+                      )}
                     </div>
                     <div className="p-2 sm:p-6">
                       <div className="flex flex-col sm:flex-row justify-between items-start mb-0.5 sm:mb-2">
@@ -345,8 +383,16 @@ País: ${finalBillingCountry}
                         <span className="font-bold text-blue-600 text-xs sm:text-base">${product.price.toFixed(2)}</span>
                       </div>
                       <div className="flex items-center gap-1 text-amber-400 mb-1.5 sm:mb-4">
-                        {[...Array(5)].map((_, i) => <Star key={i} size={8} sm:size={14} fill="currentColor" />)}
-                        <span className="text-slate-400 text-[8px] sm:text-xs ml-0.5">(48)</span>
+                        {[...Array(5)].map((_, i) => (
+                          <Star 
+                            key={i} 
+                            size={8} 
+                            sm:size={14} 
+                            fill={i < Math.floor(product.rating) ? "currentColor" : "none"} 
+                            className={i < Math.floor(product.rating) ? "" : "text-slate-200"}
+                          />
+                        ))}
+                        <span className="text-slate-400 text-[8px] sm:text-xs ml-0.5">({product.reviews})</span>
                       </div>
                       <button className="w-full py-1.5 sm:py-3 bg-slate-50 hover:bg-blue-600 hover:text-white text-slate-600 text-[10px] sm:text-base font-semibold rounded-lg sm:rounded-xl transition-all flex items-center justify-center gap-1 sm:gap-2">
                         Ver detalles
@@ -406,12 +452,41 @@ País: ${finalBillingCountry}
                     <div className="h-4 w-px bg-slate-200"></div>
                     <div className="flex items-center gap-1 text-amber-400">
                       <Star size={12} sm:size={16} fill="currentColor" />
-                      <span className="text-slate-900 font-bold text-xs sm:text-base">4.9</span>
-                      <span className="text-slate-400 text-[10px] sm:text-sm">(124 reseñas)</span>
+                      <span className="text-slate-900 font-bold text-xs sm:text-base">{selectedProduct.rating}</span>
+                      <span className="text-slate-400 text-[10px] sm:text-sm">({selectedProduct.reviews} reseñas)</span>
                     </div>
+                  </div>
+
+                  <div className="flex items-center gap-2 mb-4 sm:mb-6">
+                    {selectedProduct.stock < 10 ? (
+                      <div className="flex items-center gap-1.5 px-2 py-1 bg-red-50 text-red-600 rounded-full text-[10px] sm:text-xs font-bold animate-pulse">
+                        <Clock size={12} />
+                        ¡Solo quedan {selectedProduct.stock} unidades!
+                      </div>
+                    ) : (
+                      <div className="flex items-center gap-1.5 px-2 py-1 bg-green-50 text-green-600 rounded-full text-[10px] sm:text-xs font-bold">
+                        <Package size={12} />
+                        En stock: {selectedProduct.stock} unidades
+                      </div>
+                    )}
                   </div>
                   
                   <p className="text-xs sm:text-base text-slate-500 leading-relaxed mb-4 sm:mb-8">{selectedProduct.description}</p>
+
+                  <div className="mb-4 sm:mb-6">
+                    <label className="block text-[10px] sm:text-sm font-bold text-slate-900 mb-2 sm:mb-4">Talla: <span className="text-blue-600">{selectedSize}</span></label>
+                    <div className="flex flex-wrap gap-2">
+                      {selectedProduct.sizes.map(size => (
+                        <button
+                          key={size}
+                          onClick={() => setSelectedSize(size)}
+                          className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg border-2 text-[10px] sm:text-sm font-bold transition-all ${selectedSize === size ? 'border-blue-600 bg-blue-50 text-blue-600' : 'border-slate-100 bg-white text-slate-600 hover:border-slate-200'}`}
+                        >
+                          {size}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
 
                   <div className="mb-4 sm:mb-8">
                     <label className="block text-[10px] sm:text-sm font-bold text-slate-900 mb-2 sm:mb-4">Color: <span className="capitalize text-blue-600">{selectedColor}</span></label>
@@ -429,7 +504,7 @@ País: ${finalBillingCountry}
 
                   <div className="mt-auto space-y-2 sm:space-y-4">
                     <button 
-                      onClick={() => addToCart(selectedProduct, selectedColor)}
+                      onClick={() => addToCart(selectedProduct, selectedColor, selectedSize)}
                       className="w-full py-3 sm:py-5 bg-blue-600 hover:bg-blue-700 text-white font-black text-sm sm:text-lg rounded-xl sm:rounded-2xl shadow-xl shadow-blue-200 transition-all flex items-center justify-center gap-2 sm:gap-3"
                     >
                       <ShoppingCart size={18} sm:size={24} />
@@ -438,6 +513,35 @@ País: ${finalBillingCountry}
                     <div className="flex items-center justify-center gap-3 sm:gap-6 text-slate-400 text-[8px] sm:text-[10px] font-bold uppercase tracking-widest">
                       <div className="flex items-center gap-1"><Truck size={10} sm:size={12} /> Envío Gratis</div>
                       <div className="flex items-center gap-1"><ShieldCheck size={10} sm:size={12} /> Pago Seguro</div>
+                    </div>
+                  </div>
+
+                  {/* Reviews Section */}
+                  <div className="mt-12 pt-12 border-t border-slate-100">
+                    <h3 className="text-lg sm:text-xl font-black text-slate-900 mb-6">Reseñas de clientes</h3>
+                    <div className="space-y-6">
+                      {selectedProduct.reviewsList.map(review => (
+                        <div key={review.id} className="bg-slate-50 p-4 sm:p-6 rounded-2xl">
+                          <div className="flex items-center gap-3 mb-3">
+                            <img 
+                              src={review.userImage} 
+                              alt={review.userName} 
+                              className="w-10 h-10 rounded-full object-cover border-2 border-white shadow-sm"
+                              referrerPolicy="no-referrer"
+                            />
+                            <div>
+                              <h4 className="font-bold text-slate-900 text-sm">{review.userName}</h4>
+                              <div className="flex items-center gap-1 text-amber-400">
+                                {[...Array(5)].map((_, i) => (
+                                  <Star key={i} size={10} fill={i < review.rating ? "currentColor" : "none"} className={i < review.rating ? "" : "text-slate-200"} />
+                                ))}
+                                <span className="text-[10px] text-slate-400 ml-1">{review.date}</span>
+                              </div>
+                            </div>
+                          </div>
+                          <p className="text-slate-600 text-xs sm:text-sm leading-relaxed italic">"{review.comment}"</p>
+                        </div>
+                      ))}
                     </div>
                   </div>
                 </div>
@@ -646,7 +750,7 @@ País: ${finalBillingCountry}
                           </div>
                           <div className="flex-1">
                             <h4 className="font-bold text-slate-900 text-xs sm:text-base">{item.name}</h4>
-                            <p className="text-[10px] sm:text-xs text-slate-400 capitalize">{item.color}</p>
+                            <p className="text-[10px] sm:text-xs text-slate-400 capitalize">{item.color} | Talla: {item.size}</p>
                           </div>
                           <span className="font-bold text-slate-900 text-xs sm:text-base">${(item.price * item.quantity).toFixed(2)}</span>
                         </div>
@@ -728,16 +832,16 @@ País: ${finalBillingCountry}
                       <div className="flex-1">
                         <div className="flex justify-between mb-0.5 sm:mb-1">
                           <h4 className="font-bold text-slate-900 text-sm sm:text-base">{item.name}</h4>
-                          <button onClick={() => removeFromCart(item.productId, item.color)} className="text-slate-300 hover:text-red-500 transition-colors">
+                          <button onClick={() => removeFromCart(item.productId, item.color, item.size)} className="text-slate-300 hover:text-red-500 transition-colors">
                             <X size={14} sm:size={16} />
                           </button>
                         </div>
-                        <p className="text-[10px] sm:text-xs text-slate-400 capitalize mb-2 sm:mb-4">{item.color}</p>
+                        <p className="text-[10px] sm:text-xs text-slate-400 capitalize mb-2 sm:mb-4">{item.color} | Talla: {item.size}</p>
                         <div className="flex items-center justify-between">
                           <div className="flex items-center border border-slate-200 rounded-lg overflow-hidden bg-slate-50">
-                            <button onClick={() => updateQuantity(item.productId, item.color, -1)} className="p-1 hover:bg-slate-200"><Minus size={12} sm:size={14} /></button>
+                            <button onClick={() => updateQuantity(item.productId, item.color, item.size, -1)} className="p-1 hover:bg-slate-200"><Minus size={12} sm:size={14} /></button>
                             <span className="w-6 sm:w-8 text-center text-[10px] sm:text-xs font-bold">{item.quantity}</span>
-                            <button onClick={() => updateQuantity(item.productId, item.color, 1)} className="p-1 hover:bg-slate-200"><Plus size={12} sm:size={14} /></button>
+                            <button onClick={() => updateQuantity(item.productId, item.color, item.size, 1)} className="p-1 hover:bg-slate-200"><Plus size={12} sm:size={14} /></button>
                           </div>
                           <span className="font-bold text-slate-900 text-sm sm:text-base">${(item.price * item.quantity).toFixed(2)}</span>
                         </div>
