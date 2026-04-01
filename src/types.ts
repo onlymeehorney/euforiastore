@@ -11,6 +11,17 @@ export interface Product {
   sizes: string[];
   reviews: number;
   rating: number;
+  stock: number;
+  reviewsList: Review[];
+}
+
+export interface Review {
+  id: string;
+  userName: string;
+  rating: number;
+  comment: string;
+  date: string;
+  userImage?: string;
 }
 
 export interface CartItem {
