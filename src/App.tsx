@@ -21,90 +21,104 @@ import { Color, Product, CartItem } from './types';
 const PRODUCTS: Product[] = [
   {
     id: 'p1',
-    name: 'Pantuflas de Piel Premium',
+    name: 'Brand Of Sacrifice Performance Shorts',
     price: 7.99,
-        category: 'Otoño e invierno',
-    description: 'Pantuflas ultra suaves con forro de piel sintética de alta calidad. Ideales para el descanso en casa con un toque de elegancia y confort inigualable.',
-    colors: ['marrón', 'rosa', 'gris', 'blanco', 'rojo'],
-    sizes: ['36-37', '38-39', '40-41', '42-43'],
+        category: 'Sale',
+    description: '100% Polyester Mesh — lightweight, breathable, and quick-drying. Side pockets for functionality and comfort. High-quality sublimation printing — colors that never fade.',
+    colors: ['negro'],
+    sizes: ['S', 'M', 'L', 'XL'],
     reviews: 1248,
-    rating: 4.9,
-    stock: 12,
+    rating: 4.8,
+    stock: 13,
     reviewsList: [
-      { id: '1', userName: 'María G.', rating: 5, comment: 'Son increíblemente suaves, las mejores que he tenido.', date: 'hace 2 días', userImage: 'https://objetivoligar.com/wp-content/uploads/2017/03/blank-profile-picture-973460_1280-768x768.jpg' },
+      { id: '1', userName: 'Jose L.', rating: 5, comment: 'Muy Buenos diseños', date: 'hace 2 días', userImage: 'https://images.loox.io/uploads/2024/8/8/pcrYuQ6Ux_mid.jpg' },
     ],
     images: {
-      'marrón': 'https://image2url.com/r2/default/images/1774991893154-50d1f8be-5adb-4a75-9b74-b3d14e2005b8.jpeg',
-      'rosa': 'https://image2url.com/r2/default/images/1774992020130-1cf3f017-766e-464e-a4af-cfd8a36723fa.jpeg',
-      'gris': 'https://image2url.com/r2/default/images/1774993498033-ae52ffea-f97c-4f5f-99e3-5f70752542d5.jpeg',
-      'rojo': 'https://image2url.com/r2/default/images/1774991960729-720bd52f-1642-40ab-be0c-86c2d081e92f.jpeg',
-      'blanco': 'https://image2url.com/r2/default/images/1774993949971-2027ad14-b86f-48a2-ae98-9a6fd5260a6e.jpeg',
+      'negro': ['https://www.hokuroclothing.com/cdn/shop/products/Disenosintitulo_59.png?v=1762277322&width=1080', 'https://www.hokuroclothing.com/cdn/shop/files/Diseno_sin_titulo_-_2025-10-09T180526.560.png?v=1760004350&width=1080', 'https://www.hokuroclothing.com/cdn/shop/files/hokuro-48_c554d0c9-fdca-4c5b-a9a3-ad637ff9ee27.jpg?v=1760004350&width=1080'],
     }
   },
   {
     id: 'p2',
-    name: 'Zapatos de corazón de melocotón',
-    price: 7.99,
-    category: 'Otoño e invierno',
-    description: 'Hechas a mano con lana virgen 100%. Suela antideslizante y diseño ergonómico para una calidez total en climas extremos.',
-    colors: ['gris', 'rojo', 'rosa'],
-    sizes: ['36-37', '38-39', '40-41', '42-43'],
+    name: 'Guts Screaming Performance Shorts',
+    price: 9.99,
+    category: 'Sale',
+    description: '100% Polyester Mesh — lightweight, breathable, and quick-drying. Side pockets for functionality and comfort. High-quality sublimation printing — colors that never fade',
+    colors: ['negro'],
+    sizes: ['S', 'M', 'L', 'XL'],
     reviews: 856,
     rating: 4.7,
     stock: 5,
-    reviewsList: [
-      { id: '3', userName: 'Elena P.', rating: 5, comment: 'Súper calientes para el invierno, me encantan.', date: 'hace 3 días', userImage: 'https://objetivoligar.com/wp-content/uploads/2017/03/blank-profile-picture-973460_1280-768x768.jpg' },
-      { id: '9', userName: 'Ana T.', rating: 5, comment: 'El diseño nórdico es precioso y abrigan muchísimo.', date: 'hace 1 mes', userImage: 'https://objetivoligar.com/wp-content/uploads/2017/03/blank-profile-picture-973460_1280-768x768.jpg' },
-      { id: '11', userName: 'Marta L.', rating: 5, comment: 'Las compré para regalo y fueron un éxito total.', date: 'hace 3 meses', userImage: 'https://objetivoligar.com/wp-content/uploads/2017/03/blank-profile-picture-973460_1280-768x768.jpg' },
-      { id: '13', userName: 'Carmen J.', rating: 4, comment: 'Calentitas y cómodas para estar por casa.', date: 'hace 5 meses', userImage: 'https://objetivoligar.com/wp-content/uploads/2017/03/blank-profile-picture-973460_1280-768x768.jpg' }
-    ],
+    reviewsList: [],
     images: {
-      'gris': 'https://s.alicdn.com/@sc04/kf/H7e618b15c3aa4e3c96798f14ee195db5u.jpg?avif=close&webp=close',
-      'rojo': 'https://s.alicdn.com/@sc04/kf/Hb8cd4644d0e24a94a2ca3ce2b746e5c7r.jpg?avif=close&webp=close',
-      'rosa': 'https://s.alicdn.com/@sc04/kf/He6d9b9a283bd480caa7087ed785efc13O.jpg?avif=close&webp=close',
+      'negro': ['https://www.hokuroclothing.com/cdn/shop/products/Disenosintitulo_64.png?v=1762277318&width=1080', 'https://www.hokuroclothing.com/cdn/shop/files/hokuro-37_afc6bd24-fe12-4a72-9a08-67bed904c60b.jpg?v=1736957663&width=1080', 'https://www.hokuroclothing.com/cdn/shop/files/hokuro-27_76814dcf-e166-42ad-a885-1ce77af0361a.jpg?v=1736957425&width=1080'],
     }
   },
   {
     id: 'p3',
-    name: 'Zapatillas de interior',
+    name: 'Armor Performance Shorts',
     price: 7.99,
-    category: 'Otoño e invierno',
-    description: 'Algodón orgánico transpirable. Perfectas para después de la ducha o para días calurosos donde buscas frescura y ligereza.',
-    colors: ['nothing', 'blanco', 'negro', 'rosa'],
-    sizes: ['36-37', '38-39', '40-41', '42-43'],
+    category: 'Sale',
+    description: '100% Polyester Mesh — lightweight, breathable, and quick-drying. Side pockets for functionality and comfort. High-quality sublimation printing — colors that never fade',
+    colors: ['negro'],
+    sizes: ['S', 'M', 'L', 'XL'],
     reviews: 2103,
     rating: 4.8,
     stock: 24,
     reviewsList: [
-      { id: '5', userName: 'Lucía S.', rating: 5, comment: 'Frescas y ligeras, perfectas para el verano.', date: 'hace 1 día', userImage: 'https://objetivoligar.com/wp-content/uploads/2017/03/blank-profile-picture-973460_1280-768x768.jpg' }
+      { id: '5', userName: 'Lucía S.', rating: 5, comment: 'Excellent items and good quality shorts ☺️', date: 'hace 1 día', userImage: 'https://images.loox.io/uploads/2026/2/15/EyHpGXvSUV.jpg' }
     ],
     images: {
-      'nothing': 'https://s.alicdn.com/@sc04/kf/Hf4b1e5217bee41709c24ef173fa1d82a6.jpg?avif=close&webp=close',
-      'blanco': 'https://s.alicdn.com/@sc04/kf/H8982e975ff3f43eea3ca7a9512779aabb.jpg?avif=close&webp=close',
-      'negro': 'https://s.alicdn.com/@sc04/kf/H465031d3d7954c2a928607658627d757E.jpg?avif=close&webp=close',
-      'rosa': 'https://s.alicdn.com/@sc04/kf/H1c4812a645de4d44a561c2a483b0bd9dQ.jpg?avif=close&webp=close',
+      'negro': ['https://www.hokuroclothing.com/cdn/shop/products/Sa8a33aa88cc34de0ba3e0513fe85701dr.jpg?v=1762277489&width=1080', 'https://www.hokuroclothing.com/cdn/shop/products/S45c1930b1185458cace55bc1fd13caadp_9f07636c-a8b7-4ff9-87d0-f17f2214b882.jpg?v=1696427623&width=1080', 'https://www.hokuroclothing.com/cdn/shop/products/S45c1930b1185458cace55bc1fd13caadp_9f07636c-a8b7-4ff9-87d0-f17f2214b882.jpg?v=1696427623&width=1080', 'https://www.hokuroclothing.com/cdn/shop/products/S44f724a8c5e448b9aba926199c613f713_1cb0cd23-ecde-4e69-99b5-7b8429061813.jpg?v=1696427623&width=1080', 'https://www.hokuroclothing.com/cdn/shop/products/Sd8c48bb0ca01469ebaf4ce22c52ae4d3g_a64668a6-5ce5-4397-afb8-771a17bd185a.jpg?v=1696427623&width=1080', 'https://www.hokuroclothing.com/cdn/shop/products/Sce5271f74fa04f2bb5bc9d7fea824ceai_a4c540e4-aa6c-486b-8df7-4efbe029c0af.jpg?v=1696427623&width=1080', 'https://www.hokuroclothing.com/cdn/shop/products/S975f4830450c44ccacbf2f8c36d8fc20f_630b21c7-ca0a-403a-9b29-8beec3ada53d.jpg?v=1696427623&width=1080', 'https://www.hokuroclothing.com/cdn/shop/products/Sc21e002c2ff94706b8b5507167d4b8d6M_e7f8ae56-8f35-4d6e-adf8-00d40e4ac8ed.jpg?v=1696427623&width=1080'],
     }
   },
   {
     id: 'p4',
-    name: 'Pantuflas de Terciopelo Real',
-    price: 12.99,
-    category: 'Edición Limitada',
-    description: 'El lujo máximo para tus pies. Terciopelo italiano con detalles bordados en hilo de seda. Incluye bolsa de viaje.',
-    colors: ['rosa', 'blanco', 'negro'],
-    sizes: ['36-37', '38-39', '40-41', '42-43'],
+    name: 'Dragon Slayer Performance Shorts',
+    price: 9.99,
+    category: 'Sale',
+    description: '100% Polyester Mesh — lightweight, breathable, and quick-drying. Side pockets for functionality and comfort. High-quality sublimation printing — colors that never fade',
+    colors: ['negro'],
+    sizes: ['S', 'M', 'L', 'XL'],
     reviews: 432,
     rating: 5.0,
     stock: 3,
+    reviewsList: [ ],
+    images: {
+      'negro': ['https://www.hokuroclothing.com/cdn/shop/products/Disenosintitulo_87.png?v=1762277210&width=1080'],
+    }
+  },
+  {
+    id: 'p5',
+    name: 'Scorching Brand Performance Shorts',
+    price: 9.99,
+    category: 'Sale',
+    description: '100% Polyester Mesh — lightweight, breathable, and quick-drying. Side pockets for functionality and comfort. High-quality sublimation printing — colors that never fade',
+    colors: ['negro'],
+    sizes: ['S', 'M', 'L', 'XL'],
+    reviews: 666,
+    rating: 5.0,
+    stock: 4,
     reviewsList: [
-      { id: '7', userName: 'Sofía L.', rating: 5, comment: 'El terciopelo es de otro mundo, puro lujo.', date: 'hace 4 días', userImage: 'https://objetivoligar.com/wp-content/uploads/2017/03/blank-profile-picture-973460_1280-768x768.jpg' },
-      { id: '14', userName: 'Isabel K.', rating: 5, comment: 'Elegancia pura, me siento como una reina en casa.', date: 'hace 2 meses', userImage: 'https://objetivoligar.com/wp-content/uploads/2017/03/blank-profile-picture-973460_1280-768x768.jpg' },
-      { id: '16', userName: 'Laura D.', rating: 5, comment: 'Simplemente espectaculares.', date: 'hace 4 meses', userImage: 'https://objetivoligar.com/wp-content/uploads/2017/03/blank-profile-picture-973460_1280-768x768.jpg' }
+      { id: '17', userName: 'Guts', rating: 5, comment: 'Nice quality material. Feels like it will wear well and wash well.', date: 'hace 1 día', userImage: 'https://images.loox.io/uploads/2026/1/6/DCn9Sfg3V.jpg' }
     ],
     images: {
-      'rosa': 'https://s.alicdn.com/@sc04/kf/H5c5729c6c908475cbe4cf26d7ed78600W.jpg?avif=close&webp=close',
-      'blanco': 'https://s.alicdn.com/@sc04/kf/He815d6e02e744287907a186dbc7c91bcn.jpg?avif=close&webp=close',
-      'negro': 'https://s.alicdn.com/@sc04/kf/Hfaa7c36796ab456e920bd206087e2ebbP.jpg?avif=close&webp=close',
+      'negro': ['https://www.hokuroclothing.com/cdn/shop/products/Disenosintitulo_61.png?v=1762277319&width=1080'], // Placeholder, user will likely replace
+    }
+  },
+  {
+    id: 'p6',
+    name: 'Sorcerer King Vintage Hoodie',
+    price: 14.99,
+    category: 'Sale',
+    description: '100% Polyester Mesh — lightweight, breathable, and quick-drying. Side pockets for functionality and comfort. High-quality sublimation printing — colors that never fade',
+    colors: ['negro'],
+    sizes: ['S', 'M', 'L', 'XL'],
+    reviews: 532,
+    rating: 5.0,
+    stock: 3,
+    reviewsList: [{ id: '17', userName: 'Guts', rating: 5, comment: 'The shirt fits well and I love the texture & design!!!!!!', date: 'hace 1 día', userImage: 'https://images.loox.io/uploads/2026/1/6/DCn9Sfg3V.jpg' } ],
+    images: {
+      'negro': ['https://www.hokuroclothing.com/cdn/shop/files/Disenosintitulo_27.png?v=1762277448&width=1080', 'https://www.hokuroclothing.com/cdn/shop/files/no_watermarks_16_of_54.jpg?v=1736954488&width=1080', 'https://www.hokuroclothing.com/cdn/shop/files/no_watermarks_18_of_54.jpg?v=1736954488&width=1080'],
     }
   }
 ];
@@ -151,12 +165,14 @@ const COLOR_MAP: Record<Color, string> = {
   'negro': '#000000',
   'blanco': '#FFFFFF',
   'rojo': '#FF0000',
+  'nothing': '#E2E8F0',
 };
 
 export default function App() {
   const [view, setView] = useState<'home' | 'detail' | 'checkout'>('home');
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [selectedColor, setSelectedColor] = useState<Color>('marrón');
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const [selectedSize, setSelectedSize] = useState<string>('36-37');
   const [cart, setCart] = useState<CartItem[]>([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -208,7 +224,7 @@ export default function App() {
         color: color,
         size: size,
         quantity: 1,
-        image: product.images[color]
+        image: product.images[color][0]
       }]);
     }
     setIsCartOpen(true);
@@ -301,6 +317,11 @@ País: ${finalBillingCountry}
 
   return (
     <div className="min-h-screen bg-[#f8fafc] text-[#1e293b] font-sans selection:bg-blue-100">
+      {/* Announcement Bar */}
+      <div className="bg-black text-white text-[10px] sm:text-xs font-bold py-2 text-center uppercase tracking-[0.2em]">
+        🚨 SPRING SALE | FREE SHIPPING 🚨
+      </div>
+
       {/* Header */}
       <header className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 h-14 sm:h-16 flex items-center justify-between">
@@ -308,12 +329,12 @@ País: ${finalBillingCountry}
             className="flex items-center gap-2 cursor-pointer group"
             onClick={() => setView('home')}
           >
-            <span className="text-xl sm:text-2xl font-serif font-bold tracking-tight text-slate-900 italic">Euforia <span className="text-blue-600 not-italic">Store</span></span>
+            <span className="text-xl sm:text-2xl font-serif font-bold tracking-tight text-slate-900 italic">Euforia <span className="text-black-600 not-italic">Store</span></span>
           </div>
           
           <button 
             onClick={() => setIsCartOpen(true)}
-            className="relative p-2 text-slate-600 hover:text-blue-600 transition-colors"
+            className="relative p-2 text-slate-600 hover:text-black-600 transition-colors"
           >
             <ShoppingCart size={24} />
             {cart.length > 0 && (
@@ -334,9 +355,62 @@ País: ${finalBillingCountry}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
             >
-              <div className="mb-4 sm:mb-12 text-center">
-                <h2 className="text-xl sm:text-4xl font-extrabold text-slate-900 mb-1 sm:mb-4">¡Tus Pies Merecen un Abrazo! ✨</h2>
-                <p className="text-xs sm:text-base text-slate-500 max-w-2xl mx-auto px-4">Camina sobre nubes con nuestras pantuflas más suaves y adorables. El descanso perfecto que tu hogar necesita. ☁️💖</p>
+              {/* Hero Banner */}
+              <div className="relative w-full rounded-3xl overflow-hidden mb-8 sm:mb-16 bg-slate-900 aspect-[16/9] sm:aspect-[21/9] flex items-center justify-center">
+                <img 
+                  src="https://image2url.com/r2/default/images/1775630544634-797ba167-cc77-451f-b2a7-0ff0bd292f00.avif" 
+                  alt="Spring Sale Banner"
+                  className="absolute inset-0 w-full h-full object-cover opacity-60"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40"></div>
+                
+                <div className="relative z-10 text-center px-4">
+                  <div className="inline-block bg-white text-black px-4 py-1 sm:px-8 sm:py-2 font-black text-sm sm:text-2xl uppercase tracking-tighter mb-2 sm:mb-4">
+                    SPRING SALE
+                  </div>
+                  <h1 className="text-5xl sm:text-8xl font-black text-white tracking-tighter mb-2 sm:mb-4">
+                    -65% OFF
+                  </h1>
+                  <div className="bg-white/10 backdrop-blur-md inline-block px-4 py-1 sm:px-6 sm:py-2 border border-white/20 rounded-full mb-6 sm:mb-8">
+                    <span className="text-white font-bold text-xs sm:text-xl uppercase tracking-widest">WHILE STOCK LASTS</span>
+                  </div>
+                  
+                  <div className="flex flex-col items-center gap-2">
+                    <div className="flex items-center gap-1 text-amber-400">
+                      <Star size={16} fill="currentColor" />
+                      <Star size={16} fill="currentColor" />
+                      <Star size={16} fill="currentColor" />
+                      <Star size={16} fill="currentColor" />
+                      <Star size={16} fill="currentColor" />
+                    </div>
+                    <span className="text-white/80 text-[10px] sm:text-xs font-bold uppercase tracking-widest">
+                
+                    </span>
+                  </div>
+                </div>
+
+                {/* Banner Bottom Bar */}
+                <div className="absolute bottom-0 left-0 right-0 bg-black/60 backdrop-blur-sm py-2 sm:py-4 border-t border-white/10">
+                  <div className="flex justify-around items-center text-white text-[8px] sm:text-xs font-bold uppercase tracking-widest">
+                    <div className="flex items-center gap-2">
+                      <span>🖤 90-Day Guarantee</span>
+                    </div>
+                    <div className="h-4 w-px bg-white/20"></div>
+                    <div className="flex items-center gap-2">
+                      <span>🔥 WINTER SALE</span>
+                    </div>
+                    <div className="h-4 w-px bg-white/20 hidden sm:block"></div>
+                    <div className="hidden sm:flex items-center gap-2">
+                      <span>📦 FREE SHIPPING</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mb-8 sm:mb-16 text-center">
+                <h2 className="text-2xl sm:text-5xl font-black text-slate-900 mb-2 sm:mb-4 italic tracking-tighter uppercase">Shop Best Sellers</h2>
+                <div className="w-24 h-1.5 bg-blue-600 mx-auto rounded-full"></div>
               </div>
 
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-8">
@@ -348,13 +422,14 @@ País: ${finalBillingCountry}
                     onClick={() => {
                       setSelectedProduct(product);
                       setSelectedColor(product.colors[0]);
+                      setSelectedImageIndex(0);
                       setSelectedSize(product.sizes[0]);
                       setView('detail');
                     }}
                   >
                     <div className="aspect-square relative overflow-hidden bg-slate-50">
                       <img 
-                        src={product.images[product.colors[0]]} 
+                        src={product.images[product.colors[0]][0]} 
                         alt={product.name}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                         referrerPolicy="no-referrer"
@@ -375,7 +450,17 @@ País: ${finalBillingCountry}
                     <div className="p-2 sm:p-6">
                       <div className="flex flex-col sm:flex-row justify-between items-start mb-0.5 sm:mb-2">
                         <h3 className="font-bold text-xs sm:text-lg text-slate-900 line-clamp-1">{product.name}</h3>
-                        <span className="font-bold text-blue-600 text-xs sm:text-base">${product.price.toFixed(2)}</span>
+                        <div className="flex flex-col items-end">
+                          <div className="flex items-center gap-1">
+                            <span className="text-[8px] sm:text-[10px] text-red-500 line-through font-medium">
+                              ${(product.price / 0.35).toFixed(2)}
+                            </span>
+                            <span className="text-[8px] sm:text-[10px] text-red-600 font-bold">
+                              -65%
+                            </span>
+                          </div>
+                          <span className="font-bold text-blue-600 text-xs sm:text-base">${product.price.toFixed(2)}</span>
+                        </div>
                       </div>
                       <div className="flex items-center gap-1 text-amber-400 mb-1.5 sm:mb-4">
                         {[...Array(5)].map((_, i) => (
@@ -420,20 +505,20 @@ País: ${finalBillingCountry}
                 <div className="space-y-3 sm:space-y-4">
                   <div className="aspect-square rounded-xl sm:rounded-[32px] overflow-hidden bg-slate-50 border border-slate-100 shadow-inner">
                     <img 
-                      src={selectedProduct.images[selectedColor]} 
+                      src={selectedProduct.images[selectedColor][selectedImageIndex] || selectedProduct.images[selectedColor][0]} 
                       alt={selectedProduct.name}
                       className="w-full h-full object-cover"
                       referrerPolicy="no-referrer"
                     />
                   </div>
                   <div className="grid grid-cols-4 gap-2 sm:gap-4">
-                    {selectedProduct.colors.map(color => (
+                    {selectedProduct.images[selectedColor].map((img, index) => (
                       <button 
-                        key={color}
-                        onClick={() => setSelectedColor(color)}
-                        className={`aspect-square rounded-lg sm:rounded-2xl overflow-hidden border-2 transition-all ${selectedColor === color ? 'border-blue-600 scale-105' : 'border-transparent opacity-60'}`}
+                        key={index}
+                        onClick={() => setSelectedImageIndex(index)}
+                        className={`aspect-square rounded-lg sm:rounded-2xl overflow-hidden border-2 transition-all ${selectedImageIndex === index ? 'border-blue-600 scale-105' : 'border-transparent opacity-60'}`}
                       >
-                        <img src={selectedProduct.images[color]} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                        <img src={img} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
                       </button>
                     ))}
                   </div>
@@ -443,8 +528,18 @@ País: ${finalBillingCountry}
                   <span className="text-blue-600 font-bold text-[10px] sm:text-sm uppercase tracking-widest mb-1 sm:mb-2">{selectedProduct.category}</span>
                   <h1 className="text-xl sm:text-4xl font-black text-slate-900 mb-2 sm:mb-4">{selectedProduct.name}</h1>
                   <div className="flex items-center gap-2 sm:gap-4 mb-3 sm:mb-6">
-                    <span className="text-xl sm:text-3xl font-bold text-slate-900">${selectedProduct.price.toFixed(2)}</span>
-                    <div className="h-4 w-px bg-slate-200"></div>
+                    <div className="flex flex-col">
+                      <div className="flex items-center gap-2">
+                        <span className="text-sm sm:text-lg text-red-500 line-through font-medium">
+                          ${(selectedProduct.price / 0.35).toFixed(2)}
+                        </span>
+                        <span className="text-xs sm:text-sm bg-red-100 text-red-600 px-2 py-0.5 rounded-full font-bold">
+                          -65% OFF
+                        </span>
+                      </div>
+                      <span className="text-xl sm:text-4xl font-black text-slate-900">${selectedProduct.price.toFixed(2)}</span>
+                    </div>
+                    <div className="h-10 w-px bg-slate-200"></div>
                     <div className="flex items-center gap-1 text-amber-400">
                       <Star size={12} sm:size={16} fill="currentColor" />
                       <span className="text-slate-900 font-bold text-xs sm:text-base">{selectedProduct.rating}</span>
@@ -489,7 +584,10 @@ País: ${finalBillingCountry}
                       {selectedProduct.colors.map(color => (
                         <button
                           key={color}
-                          onClick={() => setSelectedColor(color)}
+                          onClick={() => {
+                            setSelectedColor(color);
+                            setSelectedImageIndex(0);
+                          }}
                           className={`w-8 h-8 sm:w-12 sm:h-12 rounded-full border-2 sm:border-4 transition-all transform hover:scale-110 ${selectedColor === color ? 'border-blue-600 ring-2 sm:ring-4 ring-blue-100' : 'border-white shadow-md'}`}
                           style={{ backgroundColor: COLOR_MAP[color] }}
                         />
@@ -515,7 +613,7 @@ País: ${finalBillingCountry}
                   <div className="mt-12 pt-12 border-t border-slate-100">
                     <h3 className="text-lg sm:text-xl font-black text-slate-900 mb-6">Reseñas de clientes</h3>
                     <div className="space-y-6">
-                      {selectedProduct.reviewsList.map(review => (
+                      {selectedProduct.reviewsList?.map(review => (
                         <div key={review.id} className="bg-slate-50 p-4 sm:p-6 rounded-2xl">
                           <div className="flex items-center gap-3 mb-3">
                             <img 
@@ -674,7 +772,7 @@ País: ${finalBillingCountry}
                         onClick={() => setShippingMethod('gratis')}
                         className={`p-3 sm:p-4 rounded-xl sm:rounded-2xl border-2 cursor-pointer transition-all flex justify-between items-center ${shippingMethod === 'gratis' ? 'border-blue-600 bg-blue-50' : 'border-slate-200 bg-white'}`}
                       >
-                        <span className="font-bold text-sm sm:text-base">Envío Gratis</span>
+                        <span className="font-bold text-sm sm:text-base">Envío Gratis (3-7D)</span>
                         <span className="text-slate-500 text-xs sm:text-sm">Gratis</span>
                       </div>
                       <div 
@@ -747,7 +845,12 @@ País: ${finalBillingCountry}
                             <h4 className="font-bold text-slate-900 text-xs sm:text-base">{item.name}</h4>
                             <p className="text-[10px] sm:text-xs text-slate-400 capitalize">{item.color} | Talla: {item.size}</p>
                           </div>
-                          <span className="font-bold text-slate-900 text-xs sm:text-base">${(item.price * item.quantity).toFixed(2)}</span>
+                          <div className="flex flex-col items-end">
+                            <span className="text-[8px] sm:text-[10px] text-red-500 line-through font-medium">
+                              ${((item.price * item.quantity) / 0.35).toFixed(2)}
+                            </span>
+                            <span className="font-bold text-slate-900 text-xs sm:text-base">${(item.price * item.quantity).toFixed(2)}</span>
+                          </div>
                         </div>
                       ))}
                     </div>
@@ -871,7 +974,7 @@ País: ${finalBillingCountry}
       <footer className="bg-white border-t border-slate-200 py-6 sm:py-12 mt-10 sm:mt-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <div className="flex items-center justify-center gap-2 mb-4 sm:mb-6">
-            <span className="text-lg sm:text-xl font-serif font-bold tracking-tight text-slate-900 italic">Euforia <span className="text-blue-600 not-italic">Store</span></span>
+            <span className="text-lg sm:text-xl font-serif font-bold tracking-tight text-slate-900 italic">Euforia <span className="text-black-600 not-italic">Store</span></span>
           </div>
           <p className="text-slate-400 text-[10px] sm:text-sm mb-4 sm:mb-8">© 2026 Euforia Store. Todos los derechos reservados.</p>
           <div className="flex justify-center gap-6 sm:gap-8 text-slate-300">
